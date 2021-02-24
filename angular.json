@@ -129,5 +129,8 @@
       }
     }
   },
-  "defaultProject": "onlineStore"
+  "defaultProject": "onlineStore",
+  "cli": {
+    "analytics": "fd3827c6-aacf-4560-8151-31facf2307bf"
+  }
 }

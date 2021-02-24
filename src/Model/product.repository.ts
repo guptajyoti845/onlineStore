@@ -14,18 +14,17 @@ export class ProductRepository {
     });
   }
 
-  getProducts(category: string): Product[] {
-    return this.products.filter(p => (category == null) || p.category === category);
+  getProducts(category: string = ''): Product[] {
+    return this.products.filter(p => (category == '') || p.category === category);
   }
 
   getProduct(id: number): Product {
     return <Product> this.products.find(p => p.id == id);
   }
 
-  getCategories(category: string): (string | undefined)[]{
+  getCategories(category: string = ''): (string | undefined)[] {
     return this.categories;
   }
-
 
 
 }
